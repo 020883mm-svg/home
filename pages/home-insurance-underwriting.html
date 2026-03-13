@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Insurance Manual Risk Underwriting Form</title>
+</head>
+<body>
+    <h1>Home Insurance Manual Risk Underwriting Form</h1>
+    <form action="#" method="post">
+        <label for="address">Address of Home (Estonian addresses only):</label><br>
+        <input type="text" id="address" name="address" required pattern="[A-Z][a-z]+ [0-9]+, [A-Z][a-z]+, [0-9]{5}"><br><br>
+
+        <label for="insurer-name">Name of Insurer:</label><br>
+        <input type="text" id="insurer-name" name="insurer-name" required><br><br>
+
+        <label>Type of Residence:</label><br>
+        <input type="radio" id="permanent" name="residence-type" value="permanent" required>
+        <label for="permanent">Place of Permanent Residence</label><br>
+        <input type="radio" id="rental" name="residence-type" value="rental">
+        <label for="rental">Rental</label><br>
+        <input type="radio" id="summer-home" name="residence-type" value="summer-home">
+        <label for="summer-home">Summer Home</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
